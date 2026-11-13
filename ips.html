@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IPS LCD · Display Anatomy</title>
+<meta name="description" content="Eleven layers of an IPS LCD monitor, in the order light passes through them.">
+  <script type="module" crossorigin src="./assets/ips-DWPI9uzb.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/ease-Bh4pquA0.js">
+  <link rel="stylesheet" crossorigin href="./assets/ease-CyZcsLlW.css">
+  <link rel="stylesheet" crossorigin href="./assets/ips-DbzkZRpp.css">
+</head>
+<body class="ips">
+<div id="stage"></div>
+<a class="back" href="./">← Display Anatomy</a>
+<aside id="panel">
+  <span class="eyebrow"><span id="p-no"></span><span class="draft" id="p-draft" hidden>Draft</span></span>
+  <h1 id="p-name"></h1>
+  <p class="group" id="p-group"></p>
+  <div class="compare" id="compare">
+    <figure><canvas id="c-in" width="300" height="200"></canvas><figcaption><b>Below</b><span id="c-in-l"></span></figcaption></figure>
+    <span class="to" aria-hidden="true">→</span>
+    <figure><canvas id="c-out" width="300" height="200"></canvas><figcaption><b>Above</b><span id="c-out-l"></span></figcaption></figure>
+  </div>
+  <div id="p-line" class="line"></div>
+  <div class="lc" id="lc" hidden>
+    <div class="seg" role="group" aria-label="Panel type">
+      <button id="lc-ips" class="on">IPS</button><button id="lc-va">VA (compare)</button>
+    </div>
+    <label class="row"><span>Voltage</span><input type="range" id="lc-v" min="0" max="1" step="0.01" value="0.6"><button id="lc-play" class="play" aria-label="Pause the voltage sweep">❚❚</button></label>
+    <p class="note" id="lc-note"></p>
+    <div class="bar"><span id="lc-bar"></span></div>
+    <small>Light through the front polarizer (simplified)</small>
+  </div>
+  <details class="block" id="b-deeper"><summary>How it works</summary><div id="p-deeper"></div></details>
+  <section class="block" id="b-facts"><h2>Numbers</h2><div id="p-facts"></div></section>
+</aside>
+<nav id="rail" aria-label="Layers, top of the stack first"></nav>
+<p class="hint">Drag to turn · scroll to zoom · click a layer</p>
+<p class="scale">Not to scale</p>
+<div id="tags"></div>
+</body>
+</html>
